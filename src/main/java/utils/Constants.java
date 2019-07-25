@@ -3,7 +3,7 @@ package utils;
 public class Constants {
     public static final String driverPath = "drivers//chromedriver.exe";
 
-    public static final String testurl = "https://google.pl/";
+    public static final String testurl = "https://nawa-uat.opi.org.pl/evaluation/login";
 
     public static final String login = "";
 

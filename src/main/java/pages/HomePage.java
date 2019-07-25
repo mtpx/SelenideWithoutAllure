@@ -6,10 +6,14 @@ public class HomePage extends _TestBase {
 
     private SelenideElement searchQuery = $(By.xpath("//input[@name='q']"));
     private SelenideElement searchButton = $(By.xpath("//div[@class='FPdoLc VlcLAe']//input[@name='btnK']"));
+    private SelenideElement emailInput = $("#email");
+    private SelenideElement passInput = $("#password");
+    private SelenideElement loginButton = $("#loginButton");
 
-    public void search(String searchQuery) {
-        this.searchQuery.sendKeys(searchQuery);
-        searchButton.click();
+    public void login(String email, String password) {
+        emailInput.setValue(email);
+        passInput.setValue(password);
+        loginButton.click();
     }
 
 

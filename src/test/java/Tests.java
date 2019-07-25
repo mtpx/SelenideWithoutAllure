@@ -35,7 +35,7 @@ public class Tests {
         open(Constants.testurl);
         //getWebDriver().manage().window().maximize();
 
-        new HomePage().search("Tarnobrzeg");
+        new HomePage().login("login","pass");
         Thread.sleep(2000);
     }
 
